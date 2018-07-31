@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InfraXF.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,7 @@ namespace InfraXF
         {
             InitializeComponent();
 
-            MainPage = new InfraXF.MainPage();
+            MainPage = new NavigationPage(new LoginPage());
         }
 
         protected override void OnStart()
